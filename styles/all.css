@@ -1,0 +1,247 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color-100: #f5fee7;
+  --primary-color-200: #e8fec5;
+  --primary-color-300: #c0fa73;
+  --primary-color-400: #57a203;
+  --primary-color-500: #477a11;
+  --neutral-color-100: #f8f9fa;
+  --neutral-color-200: #e9ecef;
+  --neutral-color-300: #dee2e6;
+  --neutral-color-400: #ced4da;
+  --neutral-color-500: #adb5bd;
+  --neutral-color-600: #6c757d;
+  --neutral-color-700: #495057;
+  --neutral-color-800: #343a40;
+  --neutral-color-900: #212529;
+  --danger-color-300: #d74f4f;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--neutral-color-900);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--neutral-color-900);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.col-3 {
+  max-width: calc(100% / 4);
+}
+
+.col-4 {
+  max-width: calc(100% / 3);
+}
+
+.col-6 {
+  max-width: calc(100% / 2);
+}
+
+.mb-4 {
+  margin-bottom: 48px;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* nav */
+.nav {
+  padding: 16px 0;
+}
+
+.nav-logo {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week1/logo.svg);
+  width: 129px;
+  height: 46px;
+  display: block;
+  margin-right: 48px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav-link {
+  display: block;
+  padding: 12px 0;
+}
+
+.nav-link:hover {
+  color: var(--neutral-color-600);
+}
+
+.nav-member-icon {
+  padding: 12px;
+}
+
+.nav-member-icon i {
+  font-size: 24px;
+  height: 24px;
+  line-height: 1;
+}
+
+.nav-member-icon:hover {
+  color: var(--primary-color-400);
+}
+
+.nav-member-icon:focus {
+  color: var(--neutral-color-900);
+  background-color: var(--primary-color-100);
+}
+
+/* breadcrumb */
+.breadcrumb {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.breadcrumb-item {
+  display: flex;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+  content: '/';
+  color: var(--neutral-color-300);
+  font-weight: 700;
+  margin: 0 12px;
+}
+
+.breadcrumb-item.active {
+  font-weight: 500;
+  color: var(--neutral-color-900);
+}
+
+.breadcrumb-link {
+  display: block;
+  color: var(--neutral-color-600);
+}
+
+.breadcrumb-link:hover {
+  color: var(--primary-color-400);
+}
+
+/* card */
+.card-list {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.card-item {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.card-img {
+  margin-bottom: 12px;
+}
+
+.card-link:hover .card-img {
+  opacity: 0.8;
+}
+
+.card-title {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.card-desc {
+  font-weight: 500;
+}
+
+/* action section */
+.action-section {
+  padding-top: 48px;
+}
+.action-banner {
+  padding: 24px 0;
+  background-color: var(--primary-color-200);
+}
+
+.action-banner-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  margin-right: 24px;
+}
+
+.action-banner-link {
+  display: block;
+  color: white;
+  padding: 12px 24px;
+  background-color: var(--neutral-color-900);
+  border-radius: 4px;
+}
+
+.action-banner-link:hover {
+  background-color: var(--neutral-color-700);
+}
+
+/* footer */
+.footer {
+  background-color: var(--neutral-color-100);
+  padding: 64px 0;
+}
+
+.footer-nav {
+  margin-bottom: 24px;
+}
+
+.footer-copyright {
+  padding-top: 32px;
+  border-top: 1px solid var(--neutral-color-300);
+}
+
+.copyright-text {
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: var(--neutral-color-600);
+  text-align: center;
+}
+
+.copyright-text:not(:last-child) {
+  margin-bottom: 4px;
+}
