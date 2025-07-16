@@ -87,15 +87,15 @@
 .color-item {
   margin-right: 8px;
   width: 64px;
-  cursor: pointer;
 }
 
-.color-item:hover .color-image {
+.color-link:hover .color-image {
   opacity: 0.8;
 }
 
 .color-name {
   margin-top: 4px;
+  font-weight: 400;
   color: var(--neutral-color-600);
   text-align: center;
 }
@@ -114,10 +114,12 @@
   margin-bottom: 8px;
 }
 
-.size-item {
+.size-btn {
   width: 160px;
   padding: 12px 24px;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 1.5;
   text-align: center;
   background-color: white;
   border: 1px solid var(--neutral-color-300);
@@ -125,15 +127,15 @@
   cursor: pointer;
 }
 
-.size-item:hover {
+.size-btn:hover {
   border-color: var(--neutral-color-600);
 }
 
-.size-item.selected {
+.size-btn.selected {
   border-color: var(--neutral-color-900);
 }
 
-.size-item.disabled {
+.size-btn.disabled {
   opacity: 0.4;
   pointer-events: none;
 }
