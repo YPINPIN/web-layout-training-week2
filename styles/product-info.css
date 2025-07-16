@@ -1,14 +1,10 @@
 /* product-content section */
 .product-content-section {
-  padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 /* product-image */
-.product-image-wrapper {
-  flex: 1;
-  margin-right: 24px;
-}
-
 .product-image-list {
   margin-left: -4px;
   margin-right: -4px;
@@ -24,10 +20,6 @@
 }
 
 /* product-info */
-.product-info {
-  width: 526px;
-}
-
 .product-info-main {
   margin-bottom: 32px;
 }

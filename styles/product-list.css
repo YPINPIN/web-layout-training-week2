@@ -14,11 +14,6 @@
 }
 
 /* product list sidebar */
-.product-list-sidebar {
-  width: 196px;
-  padding-right: 24px;
-  margin-right: 24px;
-}
 
 .category-link {
   display: block;
@@ -28,11 +23,6 @@
 .category-link:hover,
 .category-item.active .category-link {
   color: var(--primary-color-400);
-}
-
-/* card-wrapper */
-.card-wrapper {
-  flex: 1;
 }
 
 /* card-pagination */
